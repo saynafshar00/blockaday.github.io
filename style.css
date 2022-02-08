@@ -93,8 +93,8 @@ form label {
     display: none;
 }
 form input {
-    padding: 0.5rem;
-    margin-bottom: .5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 form button {
     background-color: #123962;
