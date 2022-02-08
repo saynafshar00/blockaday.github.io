@@ -28,13 +28,12 @@ img {
 }
 /* HEADER */
 .header-wrapper {
-    width: 100%;
     background-image: linear-gradient(#2754BA, #123962);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
 }
 
@@ -66,12 +65,13 @@ nav ul li {
 
 /* MAIN */
 main {
-    padding: 1rem;
+    padding: 2rem;
 }
 h1 {
     color: white;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-bottom: .5rem;
+    font-size: 2.5rem;
 }
 
 .wrapper-links {
@@ -87,7 +87,7 @@ h1 {
 form {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
 }
 form label {
     display: none;
@@ -107,4 +107,14 @@ form button {
 footer p {
     font-size: .8rem;
     color: white;
+}
+
+
+@media screen and (min-width:768px) {
+
+    body {
+        max-width: 375px;
+        margin: auto;
+    }
+
 }
