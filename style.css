@@ -29,6 +29,14 @@ img {
     height: auto;
 }
 /* HEADER */
+
+header {
+    padding: 2rem;
+}
+.logo {
+    width: 80px;
+    margin-top: 5rem;
+}
 .header-wrapper {
     background-color: #123962;
     display: flex;
@@ -39,9 +47,9 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
 }
 
-.logo {
+/* .logo {
     width: 35px;
-}
+} */
 
 
 /* MENU */
@@ -69,15 +77,18 @@ nav ul li {
 main {
     padding: 2rem;
 }
+main p {
+    color: #0099FD;
+}
 h1 {
     color: white;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    /* margin-top: 3rem; */
+    margin: .5rem 0 2rem 0;
     font-size: 2.5rem;
 }
 
 .wrapper-links {
-    padding-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .wrapper-links a {
@@ -93,7 +104,7 @@ h1 {
 form {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 }
 form label {
     display: none;
