@@ -28,6 +28,7 @@ img {
 }
 /* HEADER */
 .header-wrapper {
+    width: 100%;
     background-image: linear-gradient(#2754BA, #123962);
     display: flex;
     flex-flow: row nowrap;
