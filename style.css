@@ -1,0 +1,109 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #2754BA;
+}
+.wrapper-body {
+    height: 100vh;
+    background-image: linear-gradient(#123962, #2754BA);
+    text-align: center;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/* HEADER */
+.header-wrapper {
+    background-image: linear-gradient(#2754BA, #123962);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
+}
+
+.logo {
+    width: 35px;
+}
+
+
+/* MENU */
+menu {
+    display: none;
+}
+nav button img {
+    height: 24px;
+    color: rgba(255, 255, 255, 0.479);
+}
+ 
+nav button {
+    background-color: rgba(137, 43, 226, 0);
+    border: none;
+}
+nav i {
+    color: white;
+}
+nav ul li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* MAIN */
+main {
+    padding: 1rem;
+}
+h1 {
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+.wrapper-links {
+    padding-bottom: 4rem;
+}
+.wrapper-links a {
+    font-size: 1.5rem;
+    color: white;
+    padding: .3rem;
+}
+
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 8rem;
+}
+form label {
+    display: none;
+}
+form input {
+    padding: 0.5rem;
+    margin-bottom: .5rem;
+}
+form button {
+    background-color: #123962;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+/* FOOTER */
+footer p {
+    font-size: .8rem;
+    color: white;
+}
