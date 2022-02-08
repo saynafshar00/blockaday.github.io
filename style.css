@@ -93,14 +93,14 @@ form label {
     display: none;
 }
 form input {
-    padding: 1rem;
+    padding: .5rem;
     margin-bottom: 1rem;
 }
 form button {
     background-color: #123962;
     color: white;
     border: none;
-    padding: 0.5rem;
+    padding: .7rem;
 }
 
 /* FOOTER */
