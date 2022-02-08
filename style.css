@@ -103,6 +103,7 @@ form input {
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.637);
     border: none;
+    color: #123962;
 }
 form button {
     background-color: #123962;
