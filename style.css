@@ -22,6 +22,8 @@ body {
     width: 1px;
 }
 
+
+
 img {
     width: 100%;
     height: auto;
@@ -77,12 +79,16 @@ h1 {
 .wrapper-links {
     padding-bottom: 5rem;
 }
+
 .wrapper-links a {
     font-size: 1.5rem;
     color: white;
     padding: .5rem;
+    transition: color .2s ease-in-out;
 }
-
+.wrapper-links a:hover {
+    color: #0099FD;
+}
 
 form {
     display: flex;
@@ -103,6 +109,13 @@ form button {
     color: white;
     border: none;
     padding: .7rem;
+    /* transition: color .2s ease-in-out; */
+    transition: background-color .2s ease-in-out;
+
+}
+form button:hover {
+    background-color: #0099FD;
+    color: #123962;
 }
 
 /* FOOTER */
