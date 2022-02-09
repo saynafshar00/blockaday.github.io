@@ -49,6 +49,7 @@ header {
 
 
 /* MENU */
+
 menu {
     display: none;
 }
@@ -73,7 +74,11 @@ nav ul li {
 .wrapper-body {
     background-image: linear-gradient(#123962, #2754BA);
     text-align: center;
-    height: 100%;
+}
+.frame {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 main {
     padding: 2rem;
@@ -144,6 +149,10 @@ footer p {
     .frame {
         max-width: 400px;
         margin: auto;
+    }
+
+    main {
+        padding: 5rem 2rem;
     }
 
 }
