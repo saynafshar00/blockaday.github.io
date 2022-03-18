@@ -26,13 +26,14 @@ img {
 .CTA {
     background-image: linear-gradient(225.58deg, #0099FD 1.84%, #2754BA 65.45%);
     display: block;
-    border-radius: 8px;
+    border-radius: 50px;
     padding: .8rem 0;
     background-color: #123962;
     color: white;
     width: 100%;
     text-decoration: none;
     text-align: center;
+    margin-top: 3rem;
 }
 
 p {
@@ -83,7 +84,7 @@ main {
 
 /* Links */
 button {
-    border-radius: 8px;
+    border-radius: 50px;
     padding: .8rem 0;
     background-color: #123962;
     color: white;
@@ -99,7 +100,7 @@ button:hover {
 }
 .wrapper-links a {
     display: block;
-    border-radius: 8px;
+    border-radius: 50px;
     padding: .8rem 0;
     background-color: #123962;
     color: white;
