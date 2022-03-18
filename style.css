@@ -1,11 +1,10 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
 /* GENERAL */
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: #2754BA;
+    font-family: "Inter", sans-serif;
+    /* background-color: #2754BA; */
 }
 
 .visually-hidden {
@@ -25,16 +24,16 @@ img {
     height: auto;
 }
 /* HEADER */
-
+/* 
 header {
     padding: 2rem;
-}
+} */
 .logo {
-    width: 100px;
-    margin-top: 5rem;
+    width: 36px;
+    /* margin-top: 5rem; */
 }
 .header-wrapper {
-    background-color: #123962;
+    /* background-color: #123962; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -49,7 +48,7 @@ header {
 
 
 /* MENU */
-
+/* 
 menu {
     display: none;
 }
@@ -57,7 +56,7 @@ nav button img {
     height: 24px;
     color: rgba(255, 255, 255, 0.288);
 }
- 
+
 nav button {
     background-color: rgba(137, 43, 226, 0);
     border: none;
@@ -69,12 +68,12 @@ nav ul li {
     list-style-type: none;
     padding-left: 0;
 }
-
+  */
 /* MAIN */
-.wrapper-body {
-    background-image: linear-gradient(#123962, #2754BA);
+/* .wrapper-body {
+     background-image: linear-gradient(#123962, #2754BA);
     text-align: center;
-}
+} */
 .frame {
     display: flex;
     flex-flow: column;
@@ -84,23 +83,51 @@ main {
     padding: 2rem;
 }
 main p {
-    color: #0099FD;
+    color: #123962;
+}
+span {
+    font-size: 2.5rem;
 }
 h1 {
-    color: white;
+    /* color: white; */
     /* margin-top: 3rem; */
-    margin: .5rem 0 2rem 0;
+    color: #2754BA;
+    margin: .5rem 0;
     font-size: 2.5rem;
 }
 
 .wrapper-links {
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
-
-.wrapper-links a {
-    font-size: 1.5rem;
+ button {
+    border-radius: 8px;
+    padding: .8rem 0;
+    background-color: #123962;
     color: white;
-    padding: .5rem;
+    outline: none;
+    border: none;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+
+}
+button:hover {
+    background-color: #0099FD;
+    color: #123962;
+}
+.wrapper-links button i {
+    padding-right: .5rem;
+}
+.wrapper-links button {
+
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+
+}
+.wrapper-links a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
     transition: color .2s ease-in-out;
 }
 .wrapper-links a:hover {
@@ -111,31 +138,20 @@ form {
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 2.5rem;
+    padding: .5rem 0;
+
 }
 form label {
     display: none;
 }
 form input {
-    padding: .5rem;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.637);
     border: none;
     color: #123962;
     border-radius: 0;
 }
-form button {
-    background-color: #123962;
-    color: white;
-    border: none;
-    padding: .7rem;
-    /* transition: color .2s ease-in-out; */
-    transition: background-color .2s ease-in-out;
 
-}
-form button:hover {
-    background-color: #0099FD;
-    color: #123962;
-}
 
 /* FOOTER */
 footer p {
