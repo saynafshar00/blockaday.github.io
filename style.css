@@ -46,8 +46,9 @@ h1 {
     margin: .5rem 0;
     font-size: 2.5rem;
 }
-h3 {
+h2 {
     color: #2754BA;
+    margin: 0;
 }
 
 
@@ -94,6 +95,7 @@ button {
 button:hover {
     background-color: #0099FD;
     color: #123962;
+    font-weight: bold;
 }
 .wrapper-links a {
     display: block;
@@ -110,16 +112,18 @@ button:hover {
 .wrapper-links a:hover {
     background-color: #0099FD;
     color: #123962;
+    font-weight: bold;
 }
 .wrapper-links {
-    margin: 5rem 0;
+    margin: 6rem 0;
     border-top: .5px solid #0098fd4f;
     border-bottom: .5px solid #0098fd4f;
-    padding-bottom: 5rem;
+    padding: 6rem 0;
 }
-.wrapper-links h3 {
-    margin-top: 5rem;
+.wrapper-links p {
+    margin-bottom: 3rem;
 }
+
 
 a i {
     padding-right: .5rem;
@@ -136,8 +140,9 @@ a i {
 }
 
 
+/* Contact Us */
+
 form {
-    margin: 5rem 0;
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 2.5rem;
@@ -158,7 +163,9 @@ form button {
     margin-top: 1rem;
     font-size: 1rem;
 }
-
+form p {
+    margin-bottom: 3rem;
+}
 
 
 /* FOOTER */
