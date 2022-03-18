@@ -67,16 +67,7 @@ main {
 
 
 /* Links */
-.wrapper-links {
-    margin: 5rem 0;
-    border-top: .5px solid #0098fd4f;
-    border-bottom: .5px solid #0098fd4f;
-    padding-bottom: 5rem;
-}
-.wrapper-links h3 {
-    margin-top: 5rem;
-}
- button {
+button {
     border-radius: 8px;
     padding: .8rem 0;
     background-color: #123962;
@@ -90,7 +81,27 @@ button:hover {
     background-color: #0099FD;
     color: #123962;
 }
-.wrapper-links button i {
+.wrapper-links a {
+    display: block;
+    border-radius: 8px;
+    padding: .8rem 0;
+    background-color: #123962;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.wrapper-links {
+    margin: 5rem 0;
+    border-top: .5px solid #0098fd4f;
+    border-bottom: .5px solid #0098fd4f;
+    padding-bottom: 5rem;
+}
+.wrapper-links h3 {
+    margin-top: 5rem;
+}
+
+.wrapper-links a i {
     padding-right: .5rem;
 }
 .wrapper-links button {
