@@ -5,9 +5,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     /* background-color: #2754BA; */
-
 }
-
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -17,25 +15,34 @@ body {
     white-space: nowrap;
     width: 1px;
 }
-
-
-
-
 img {
     width: 100%;
     height: auto;
 }
-/* HEADER */
-/* 
-header {
-    padding: 2rem;
-} */
 .logo {
     width: 36px;
     /* margin-top: 5rem; */
 }
-.header-wrapper {
-    /* background-color: #123962; */
+
+p {
+    color: #123962;
+}
+span {
+    font-size: 2.5rem;
+}
+h1 {
+    color: #2754BA;
+    margin: .5rem 0;
+    font-size: 2.5rem;
+}
+h3 {
+    color: #2754BA;
+}
+
+
+
+/* Header */
+header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -44,10 +51,123 @@ header {
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20); */
     box-shadow: 0px 4px 4px rgba(39, 84, 186, 0.1)
 }
+
+
+
+
+/* Landing */
+.frame {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 main {
-    padding: 0 2rem;
+    margin: 3rem 2rem;
+}
+
+
+/* Links */
+.wrapper-links {
+    margin: 5rem 0;
+    border-top: .5px solid #0098fd4f;
+    border-bottom: .5px solid #0098fd4f;
+    padding-bottom: 5rem;
+}
+.wrapper-links h3 {
+    margin-top: 5rem;
+}
+ button {
+    border-radius: 8px;
+    padding: .8rem 0;
+    background-color: #123962;
+    color: white;
+    outline: none;
+    border: none;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+button:hover {
+    background-color: #0099FD;
+    color: #123962;
+}
+.wrapper-links button i {
+    padding-right: .5rem;
+}
+.wrapper-links button {
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+}
+.wrapper-links a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+form {
+    margin: 5rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2.5rem;
+}
+form label {
+    display: none;
+}
+form input, textarea {
+    /* color: rgba(255, 255, 255, 0.637); */
+    border: .5px solid #12396263;
+    color: #123962;
+    border-radius: 8px;
+    padding: .8rem;
+    margin: .5rem 0;
+    font-family: "Inter", serif;
+}
+form button {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+
+/* FOOTER */
+footer {
+    margin-top: 8rem;
+    background-image: linear-gradient(135deg, #123962 10%, #2754BA, #0099FD);
+    padding: 5rem 0;
+}
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .frame {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    main {
+        padding: 3rem 0;
+        margin: 0;
+    }
+    header {
+        display: block;
+        text-align: left;
+    }
+    .header-wrapper {
+        max-width: 500px;
+        margin: auto;
+    }
+    
 
 }
+
+
+
 
 /* .logo {
     width: 35px;
@@ -81,114 +201,3 @@ nav ul li {
      background-image: linear-gradient(#123962, #2754BA);
     text-align: center;
 } */
-.frame {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-main {
-    padding: 2rem;
-}
-main p {
-    color: #123962;
-}
-span {
-    font-size: 2.5rem;
-}
-h1 {
-    /* color: white; */
-    /* margin-top: 3rem; */
-    color: #2754BA;
-    margin: .5rem 0;
-    font-size: 2.5rem;
-}
-h3 {
-    color: #2754BA;
-}
-
-.wrapper-links {
-    margin: 8rem 0;
-}
- button {
-    border-radius: 8px;
-    padding: .8rem 0;
-    background-color: #123962;
-    color: white;
-    outline: none;
-    border: none;
-    transition: background-color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-}
-button:hover {
-    background-color: #0099FD;
-    color: #123962;
-}
-.wrapper-links button i {
-    padding-right: .5rem;
-}
-.wrapper-links button {
-    display: block;
-    margin: 1rem 0;
-    width: 100%;
-
-}
-.wrapper-links a {
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-}
-.wrapper-links a:hover {
-    color: #0099FD;
-}
-
-form {
-    margin: 8rem 0;
-    display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: 2.5rem;
-}
-form label {
-    display: none;
-}
-form input, textarea {
-    /* color: rgba(255, 255, 255, 0.637); */
-    border: .5px solid #12396263;
-    color: #123962;
-    border-radius: 8px;
-    padding: .8rem;
-    margin: .5rem 0;
-    font-family: "Inter", serif;
-}
-form button {
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-
-
-/* FOOTER */
-footer {
-    margin-top: 8rem;
-    background-image: linear-gradient(135deg, #123962 10%, #2754BA, #0099FD);
-    padding: 5rem 2rem;
-}
-footer p {
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-}
-
-
-@media screen and (min-width:768px) {
-
-    .frame {
-        max-width: 400px;
-        margin: auto;
-    }
-
-    main {
-        padding: 3rem 2rem;
-    }
-
-}
