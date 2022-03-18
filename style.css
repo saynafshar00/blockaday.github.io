@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
     /* background-color: #2754BA; */
+
 }
 
 .visually-hidden {
@@ -16,6 +17,7 @@ body {
     white-space: nowrap;
     width: 1px;
 }
+
 
 
 
@@ -40,6 +42,10 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
+}
+main {
+    padding: 0 2rem;
+
 }
 
 /* .logo {
@@ -95,6 +101,9 @@ h1 {
     margin: .5rem 0;
     font-size: 2.5rem;
 }
+h3 {
+    color: #2754BA;
+}
 
 .wrapper-links {
     margin: 3rem 0;
@@ -108,7 +117,6 @@ h1 {
     border: none;
     transition: background-color .2s ease-in-out;
     transition: color .2s ease-in-out;
-
 }
 button:hover {
     background-color: #0099FD;
@@ -118,7 +126,6 @@ button:hover {
     padding-right: .5rem;
 }
 .wrapper-links button {
-
     display: block;
     margin: 1rem 0;
     width: 100%;
@@ -135,27 +142,39 @@ button:hover {
 }
 
 form {
+    margin: 5rem 0;
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 2.5rem;
-    padding: .5rem 0;
-
 }
 form label {
     display: none;
 }
-form input {
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.637);
-    border: none;
+form input, textarea {
+    /* color: rgba(255, 255, 255, 0.637); */
+    border: .5px solid #12396263;
     color: #123962;
-    border-radius: 0;
+    border-radius: 8px;
+    padding: .8rem;
+    margin: .5rem 0;
+    font-family: "Inter", serif;
+}
+form button {
+    margin-top: 1rem;
+    font-size: 1rem;
 }
 
 
+
 /* FOOTER */
+footer {
+    margin-top: 5rem;
+    background-image: linear-gradient(135deg, #123962 10%, #2754BA, #0099FD);
+    padding: 5rem 2rem;
+}
 footer p {
-    font-size: .8rem;
+    text-align: center;
+    font-size: 1rem;
     color: white;
 }
 
