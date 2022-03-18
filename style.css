@@ -41,7 +41,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.20); */
+    box-shadow: 0px 4px 4px rgba(39, 84, 186, 0.1)
 }
 main {
     padding: 0 2rem;
@@ -107,6 +108,7 @@ h3 {
 
 .wrapper-links {
     margin: 3rem 0;
+    margin-top: 5rem;
 }
  button {
     border-radius: 8px;
