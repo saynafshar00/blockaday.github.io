@@ -1,0 +1,12 @@
+Blockaday
+img
+imgs
+li
+ul
+cta
+href
+fa-instagram
+fa-youtube
+fa-linkedin
+fa-tiktok
+replyto

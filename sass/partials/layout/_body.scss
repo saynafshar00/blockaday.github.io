@@ -1,0 +1,26 @@
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+#podcasts, #events, #blogs, #contact {
+    height: 100vh;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+
+
+    header {
+        display: block;
+        text-align: left;
+    }
+   
+
+}
+

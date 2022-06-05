@@ -1,0 +1,22 @@
+aside {
+    background-color: #FFE45F;
+
+}
+aside p {
+    color: black;
+}
+aside h2 {
+    color: #021E3A;
+}
+
+
+@media screen and (min-width:768px) {
+
+    aside {
+        padding: 6rem 0;
+    }
+    .aside-wrapper {
+        max-width: 700px;
+        margin: auto;
+    }
+}

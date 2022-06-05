@@ -1,0 +1,40 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&display=swap');
+
+p {
+    color: #123962;
+    margin: .5rem 0;
+    font-size: .9rem;
+}
+.landing p {
+    color: #1F548B;
+}
+span {
+    font-size: 2.5rem;
+}
+h1 {
+    color: #123962;
+    margin: .5rem 0;
+    font-size: 3rem;
+    letter-spacing: -.5px;
+}
+h2 {
+    color: #123962;
+    margin: 0;
+    margin-bottom: .5rem;
+    letter-spacing: -.5px;
+}
+.landing h2 {
+    color: #2363a8;
+}
+h3 {
+    color: #2754BA;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+.box h3 a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1F548B;
+    
+}

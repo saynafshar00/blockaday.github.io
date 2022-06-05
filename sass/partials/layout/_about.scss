@@ -1,0 +1,27 @@
+.box-wrapper {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+.box-menu {
+    border: 1px solid #1f538b44;
+    border-radius: 8px;
+    transition: box-shadow ease-in-out .4s;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    color: #1F548B;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
+    text-decoration: none;
+
+}
+
+.box-menu i {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.box-menu:hover {
+    box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
+}

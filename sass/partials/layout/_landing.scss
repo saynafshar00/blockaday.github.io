@@ -1,0 +1,44 @@
+/* Landing */
+.landing-wrapper {
+    background-image: url(../../../assets/Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.landing {
+    padding: 6rem 2rem 8rem 2rem;
+}
+.landing #secondary{
+    margin-top: .5rem;
+    width: 250px;
+}
+.landing #cta{
+    width: 250px;
+}
+
+
+// .wrapper-section {
+//     margin: 6rem 0;
+//     border-top: .5px solid #0098fd4f;
+//     border-bottom: .5px solid #0098fd4f;
+//     padding: 6rem 0;
+// }
+// .wrapper-links p {
+//     margin-bottom: 2rem;
+// }
+
+
+
+@media screen and (min-width:768px) {
+
+    .landing {
+        padding: 6rem 0;
+        max-width: 700px;
+        margin: auto;
+    }
+    .landing-wrapper {
+        background-color: #FAFBFC;
+        background-size: contain;
+    }
+
+}

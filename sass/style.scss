@@ -1,0 +1,43 @@
+/*
+Theme Name: Blockaday website
+Theme URI: https://blockaday.ca/
+Author: Sayena Einafshar
+Description: For class excerise
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blockaday-website
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+Tables of content
+1.variables
+2.mixin
+3.typography
+4.layout
+5.Media
+6.Accessibility
+7.navigation
+8.pages
+*/
+
+
+// 1.variables ================================== */
+@import "partials/variables/variables" ;
+// 2.mixins ================================== */
+@import "partials/mixin/mixin" ;
+// 3.typography ================================== */
+@import "partials/typography/typography" ;
+// 4.layout ================================== */
+@import "partials/layout/layout" ;
+// 5.Media ================================== */
+@import "partials/media/media" ;
+// 6.Accessibility ================================== */
+@import "partials/accessibility/accessibility" ;
+// 7.navigation ================================== */
+@import "partials/navigation/navigation" ;
+// 8.pages ================================== */
+@import "partials/pages/pages" ;
