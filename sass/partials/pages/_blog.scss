@@ -1,0 +1,27 @@
+.blog-wrapper {
+    padding: 2rem;
+}
+
+.blog-box-wrapper {
+    padding: 2rem 0;
+}
+
+.blog-box-wrapper .box img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+        .blogs-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 2rem;
+        }
+}

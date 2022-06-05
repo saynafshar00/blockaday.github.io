@@ -268,7 +268,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#podcasts, #events, #blogs, #contact {
+#podcasts, #events, #contact {
   height: 100vh;
 }
 
@@ -601,5 +601,27 @@ nav div {
   }
   #menu ul li {
     padding: 0;
+  }
+}
+
+.blog-wrapper {
+  padding: 2rem;
+}
+
+.blog-box-wrapper {
+  padding: 2rem 0;
+}
+
+.blog-box-wrapper .box img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .blogs-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem;
   }
 }
