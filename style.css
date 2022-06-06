@@ -309,6 +309,12 @@ h3 {
   color: #1F548B;
 }
 
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
 /* GENERAL */
 body {
   margin: 0;
@@ -473,7 +479,7 @@ aside h2 {
 
 #betobe form {
   width: 450px;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -750,8 +756,20 @@ nav div {
   }
 }
 
-#contact #primary {
+#contact {
   margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    min-height: 60vh;
+  }
+  #contact form {
+    padding: 6rem 0;
+    width: 450px;
+    margin: auto;
+  }
 }
 
 .blog-wrapper {
@@ -777,5 +795,43 @@ nav div {
 }
 
 .social-wrapper {
+  margin-top: 1rem;
+  text-align: center;
   padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .social-wrapper {
+    min-height: 60vh;
+  }
+  .social-wrapper .box-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .social-wrapper > p {
+    padding: 0 5rem;
+  }
+  .social-wrapper {
+    padding: 6rem 0;
+  }
+}
+
+#newsletter {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #newsletter {
+    min-height: 60vh;
+  }
+  #newsletter form {
+    padding: 6rem 0;
+    width: 450px;
+    margin: auto;
+  }
 }

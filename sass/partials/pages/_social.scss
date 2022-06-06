@@ -1,3 +1,28 @@
-.social-wrapper {
+
+.social-wrapper  {
+    margin-top: 1rem;
+    text-align: center;
     padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+@media screen and (min-width:768px) {
+    .social-wrapper {
+        min-height: 60vh;
+    }
+    .social-wrapper .box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .social-wrapper > p {
+        padding: 0 5rem;
+    }
+  
+    .social-wrapper {
+        padding: 6rem 0;
+    }
 }
