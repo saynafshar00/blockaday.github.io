@@ -70,8 +70,13 @@ nav div {
     text-decoration: none;
     color: white;
 }
-
-
+.bottom-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.bottom-menu ul li {
+    padding: 1rem;
+}
 @media screen and (min-width:768px) {
     nav div {
         display: unset;
@@ -107,12 +112,7 @@ nav div {
     #menu ul li {
         padding: 0;
     }
-    .bottom-menu ul {
-        margin: 0;
-        padding: 0;
-    }
-    .bottom-menu ul li {
-        padding: 1rem;
-    }
+
+  
 
 }

@@ -15,16 +15,6 @@
     font-size: 1rem;
     // color: #2754BA;
 }
-// footer
-.links {
-    color: white;
-    text-decoration: none;
-    padding: .8rem;
-}
-.socials {
-    display: flex;
-    flex-flow: column wrap;
-}
 
 
 @media screen and (min-width:768px) {
@@ -39,7 +29,6 @@
     .three {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0 2rem;
     }
 
     .space {
