@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <link rel="shortcut icon" href="Branding/favicon-16x16.png" type="image/x-icon">
-    <title>Blockaday - Events</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Blockaday Podcasts</title>
 </head>
+
 <body>
     <div class="wrapper-body">
         <header>
             <div class="header-wrapper">
                 <div class="logo-wrapper">
-                    <a href="index.html"><img class="logo" src="Branding/logo-Blockaday.png" alt="Blockaday Logo"></a>
+                    <a href="index.html"><img class="logo" src="Branding/logo-Blockaday.png" alt="Blockaday Logo"></a>                
                 </div>
                 <nav class="nav-wrapper">
                     <button id="menu-button"><i class="fas fa-bars"><span class="visually-hidden">Menu</span></i></button> 
@@ -35,16 +36,58 @@
 
         </header>
 
-        <main id="events">
+        <main id="events" class="podcasts-wrapper">
+            <div>
+                <h2>Events</h2>
+                <p class="highlight">Online and In-person Workshops</p>
+                <p>We demo or use your product in an event we host, such as workshops, hackathons, or seminars.</p>
+                </div>
 
+                <div>
+                    <div class="box">
+                        <img src="assets/events/Eth Van.jpg" alt="Eth Vancouver">
+                        <div class="box-services">
+                            <h3>DeFi Demo Nights:Polygon</h3>
+                            <p class="highlight">30+ attendees</p>
+                            <p>Collaborations with Ethereum Vancouver & UBC Blockchain Club</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/events/GDSC.jpg" alt="GDSC">
+                        <div class="box-services">
+                            <h3>Developer-focused Web3 Workshop</h3>
+                            <p class="highlight">70+ attendees</p>
+                            <p>Collaborated with Google Developer club @UBC to host a hands-on blockchain developer workshop</p>
+
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/events/RBC.jpg" alt="RBC">
+                        <div class="box-services">
+                            <h3>RBC Picth</h3>
+                            <p class="highlight">10 other pitching teams</p>
+                            <p>Won 3rd place in RBC Get Seeded pitch competition & received $500 + mentorship opportunities from eHub at UBC</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
 
         </main>
 
         
         <footer>
-                <div class="footer-wrapper">
-                    <p>Ⓒ 2022 All Rights Reserved.</p>
+            <div class="footer-wrapper">
+                <div class="socials">
+                    <a class="links" href="mailto:Blockaday.crypto@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+                    <a class="links" href="https://www.instagram.com/blockaday.crypto/"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a class="links" href="https://www.youtube.com/channel/UCWd6g9KG5opResMcIBHAKxQ"><i class="fab fa-youtube"></i>YouTube</a>
+                    <a class="links" href="https://www.linkedin.com/company/blockaday/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                    <a class="links" href="https://twitter.com/Blockaday"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a class="links" href="https://www.tiktok.com/@blockaday"><i class="fab fa-tiktok"></i>TikTok</a>
                 </div>
-        </footer>
+                <p>Ⓒ 2022 All Rights Reserved.</p>
+            </div>
+    </footer>
 </body>
 </html>

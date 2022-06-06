@@ -616,6 +616,18 @@ nav div {
   }
 }
 
+.podcasts-wrapper {
+  padding: 2rem;
+}
+
+.episodes {
+  padding: 2rem 0;
+}
+
+#events .box img {
+  width: 100%;
+}
+
 .blog-wrapper {
   padding: 2rem;
 }
