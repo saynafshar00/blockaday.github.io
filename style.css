@@ -123,6 +123,7 @@ a i {
   text-align: center;
   min-width: 250px;
   margin-top: 1rem;
+  color: white;
 }
 
 #primary a {
@@ -416,7 +417,7 @@ header {
 /* FOOTER */
 footer {
   background-color: #123962;
-  padding: 6rem 2rem 4rem 2rem;
+  padding: 6rem 6rem 4rem 6rem;
 }
 
 footer p {
@@ -427,13 +428,48 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  footer .socials {
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .bottom-nav ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    width: 500px;
-    margin: auto;
+    -ms-grid-columns: ()[1fr];
+        grid-template-columns: repeat(1fr);
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    gap: .5rem 0;
+  }
+  .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    gap: .5rem 0;
   }
 }
 
@@ -705,6 +741,15 @@ nav div {
   padding: 1rem 0;
 }
 
+.bottom-menu li {
+  list-style: none;
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   nav div {
     display: unset;
@@ -740,6 +785,13 @@ nav div {
   }
   #menu ul li {
     padding: 0;
+  }
+  .bottom-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-menu ul li {
+    padding: 1rem;
   }
 }
 
