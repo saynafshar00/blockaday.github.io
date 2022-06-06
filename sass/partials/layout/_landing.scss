@@ -8,32 +8,20 @@
 .landing {
     padding: 6rem 2rem 8rem 2rem;
 }
-// .landing #secondary{
-//     margin-top: .5rem;
-//     width: 250px;
-// }
-// .landing #cta{
-//     width: 250px;
-// }
-
-
-// .wrapper-section {
-//     margin: 6rem 0;
-//     border-top: .5px solid #0098fd4f;
-//     border-bottom: .5px solid #0098fd4f;
-//     padding: 6rem 0;
-// }
-// .wrapper-links p {
-//     margin-bottom: 2rem;
-// }
-
-
 
 @media screen and (min-width:768px) {
-    .flex-wrap {
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
-        gap: 0 2rem;
+    .column-order div:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        justify-self: end;
+    }
+    .column-order div:nth-child(2) {
+        grid-column: 1 / -1;
+    }
+    .column-order div:nth-child(1) {
+        grid-column: 1/ 3;
+        grid-row: 1;
     }
     .landing {
         padding: 6rem 0;
@@ -43,6 +31,10 @@
     .landing-wrapper {
         background-color: #FAFBFC;
         background-size: contain;
+    }
+
+    .landing #cta{
+        margin-top: 0;
     }
 
 
