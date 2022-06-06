@@ -10,7 +10,6 @@
 }
 @media screen and (min-width:768px) {
 
-
     .services {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -36,8 +35,5 @@
         flex-flow: column nowrap;
     }
 
-    #services > div > p {
-        width: 600px;
-    }
- 
+
 }

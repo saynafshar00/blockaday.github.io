@@ -64,6 +64,10 @@ Tables of content
           flex-flow: column wrap;
 }
 
+.text-limit {
+  width: 600px;
+}
+
 @media screen and (min-width: 768px) {
   .two {
     display: -ms-grid;
@@ -210,6 +214,10 @@ button:hover {
 
 .box a {
   text-decoration: none;
+}
+
+.box-services {
+  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -416,6 +424,7 @@ header {
   .landing-wrapper {
     background-color: #FAFBFC;
     background-size: contain;
+    padding: 2rem 0;
   }
   .landing #cta {
     margin-top: 0;
@@ -482,9 +491,6 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-  }
-  #services > div > p {
-    width: 600px;
   }
 }
 
@@ -601,6 +607,9 @@ aside h2 {
     padding: 4rem 0;
     max-width: 700px;
     margin: auto;
+  }
+  .box-menu-wrapper {
+    padding: 4rem 2rem;
   }
   #about #secondary {
     width: 100%;
@@ -727,6 +736,7 @@ nav div {
     color: #2754BA;
     padding: 0 .5rem;
     text-align: right;
+    font-weight: 500;
   }
   #menu ul {
     display: -webkit-box;
@@ -770,6 +780,7 @@ nav div {
 
 #events .box img {
   width: 100%;
+  margin: 0;
 }
 
 #events .box .box-services {
@@ -782,11 +793,13 @@ nav div {
     max-width: 700px;
     margin: auto;
   }
-  #events .box img {
-    width: 100%;
-  }
   .event-wrapper {
     padding: 2rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
   }
 }
 
@@ -819,7 +832,7 @@ nav div {
 }
 
 @media screen and (min-width: 768px) {
-  .blog-wrapper {
+  .blog-box-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
