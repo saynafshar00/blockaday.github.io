@@ -292,7 +292,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#podcasts, #events, #contact {
+#podcasts, #events {
   height: 100vh;
 }
 
