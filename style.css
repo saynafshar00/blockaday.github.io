@@ -530,6 +530,10 @@ footer p {
   }
 }
 
+.betobe-wrapper {
+  padding: 2rem;
+}
+
 aside {
   background-color: #FFE45F;
 }
@@ -543,8 +547,8 @@ aside h2 {
 }
 
 #betobe form {
-  width: 450px;
-  margin: 2rem auto;
+  max-width: 450px;
+  margin: 2rem auto 5rem auto;
 }
 
 @media screen and (min-width: 768px) {
