@@ -180,6 +180,10 @@ button:hover {
   margin: auto;
 }
 
+.box a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .box {
     display: -webkit-box;
