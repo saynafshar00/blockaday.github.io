@@ -21,6 +21,10 @@
     .text-limit {
         width: 600px;
     }
+    .text-wrap {
+        width: 300px;
+        margin: auto;
+    }
     .two {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
