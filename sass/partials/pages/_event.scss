@@ -1,3 +1,6 @@
+.events-wrapper {
+    padding: 2rem;
+}
 #events .box img {
     width: 100%;
     margin: 0;
@@ -18,7 +21,6 @@
     }
 
     .event-wrapper {
-        padding: 2rem 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0 1rem;

@@ -859,10 +859,13 @@ nav div {
 
 @media screen and (min-width: 768px) {
   .podcasts-wrapper {
-    padding-top: 4rem;
     max-width: 700px;
     margin: auto;
   }
+}
+
+.events-wrapper {
+  padding: 2rem;
 }
 
 #events .box img {
@@ -881,7 +884,6 @@ nav div {
     margin: auto;
   }
   .event-wrapper {
-    padding: 2rem 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -906,7 +908,7 @@ nav div {
   }
 }
 
-.blog-wrapper {
+.blogs-wrapper {
   padding: 2rem;
 }
 
