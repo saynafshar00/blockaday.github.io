@@ -427,7 +427,7 @@ aside h2 {
 }
 
 .box-wrapper {
-  padding: 1rem 2rem;
+  padding: 2rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -652,4 +652,8 @@ nav div {
         grid-template-columns: repeat(2, 1fr);
     gap: 0 2rem;
   }
+}
+
+.social-wrapper {
+  padding: 2rem;
 }
