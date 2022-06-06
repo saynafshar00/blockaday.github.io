@@ -1,5 +1,5 @@
 // services
-.box-services {
+.service-box {
     padding: 1rem;
 }
 
@@ -10,4 +10,21 @@
         max-width: 700px;
         margin: auto;
     }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services > div:nth-child(2){
+        grid-row: 2;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        grid-column: 1 / -1;
+    }
+
+    .services .box .service-box {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+ 
 }

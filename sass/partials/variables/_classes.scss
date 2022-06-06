@@ -25,3 +25,17 @@
     display: flex;
     flex-flow: column wrap;
 }
+
+@media screen and (min-width:768px) {
+    .two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 2rem;
+    }
+    .three {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 2rem;
+    }
+
+}

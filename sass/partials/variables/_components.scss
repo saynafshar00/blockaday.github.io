@@ -137,8 +137,10 @@ button:hover {
 @media screen and (min-width:768px) {
     .box {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
+        padding-top: 2rem;
     }
+
 
     .box img {
         border-radius: 8px 0 0 8px;

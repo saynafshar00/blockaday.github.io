@@ -64,6 +64,23 @@ Tables of content
           flex-flow: column wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .two {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem;
+  }
+  .three {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0 2rem;
+  }
+}
+
 #cta {
   background: linear-gradient(230.99deg, #0084DB 0%, #103DA4 48.28%, #123962 96.56%);
   display: block;
@@ -189,10 +206,11 @@ button:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding-top: 2rem;
   }
   .box img {
     border-radius: 8px 0 0 8px;
@@ -240,7 +258,7 @@ form p {
 @media screen and (min-width: 768px) {
   .contact {
     padding: 6rem 0;
-    max-width: 700px;
+    width: 450px;
     margin: auto;
   }
 }
@@ -367,6 +385,13 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .flex-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+    gap: 0 2rem;
+  }
   .landing {
     padding: 6rem 0;
     max-width: 700px;
@@ -392,7 +417,7 @@ footer p {
   margin-top: 3rem;
 }
 
-.box-services {
+.service-box {
   padding: 1rem;
 }
 
@@ -401,6 +426,34 @@ footer p {
     padding: 6rem 0;
     max-width: 700px;
     margin: auto;
+  }
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .services > div:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    gap: 1rem;
+    grid-column: 1 / -1;
+  }
+  .services .box .service-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
 }
 
@@ -485,6 +538,15 @@ aside h2 {
   padding: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .box-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -508,6 +570,9 @@ img {
 @media screen and (min-width: 768px) {
   .large-view {
     display: none;
+  }
+  .mobile-view {
+    display: block;
   }
 }
 
