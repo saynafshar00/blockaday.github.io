@@ -156,6 +156,30 @@ button:hover {
   font-weight: bold;
 }
 
+.box {
+  border: 1px solid rgba(128, 128, 128, 0.134);
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  -webkit-transition: -webkit-box-shadow ease-in-out .4s;
+  transition: -webkit-box-shadow ease-in-out .4s;
+  transition: box-shadow ease-in-out .4s;
+  transition: box-shadow ease-in-out .4s, -webkit-box-shadow ease-in-out .4s;
+}
+
+.box:hover {
+  -webkit-box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
+          box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
+}
+
+.box img {
+  border-radius: 8px 8px 0 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   .box {
     display: -webkit-box;
@@ -364,30 +388,6 @@ footer p {
   margin-top: 3rem;
 }
 
-.box {
-  border: 1px solid rgba(128, 128, 128, 0.134);
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  -webkit-transition: -webkit-box-shadow ease-in-out .4s;
-  transition: -webkit-box-shadow ease-in-out .4s;
-  transition: box-shadow ease-in-out .4s;
-  transition: box-shadow ease-in-out .4s, -webkit-box-shadow ease-in-out .4s;
-}
-
-.box:hover {
-  -webkit-box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
-          box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
-}
-
-.box img {
-  border-radius: 8px 8px 0 0;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-}
-
 .box-services {
   padding: 1rem;
 }
@@ -461,6 +461,14 @@ aside h2 {
 .box-menu:hover {
   -webkit-box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
           box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
+}
+
+.about-wrapper {
+  padding: 2rem;
+}
+
+.member {
+  padding: 1rem;
 }
 
 img {
@@ -617,7 +625,7 @@ nav div {
 }
 
 @media screen and (min-width: 768px) {
-  .blogs-wrapper {
+  .blog-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
