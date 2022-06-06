@@ -89,6 +89,7 @@ Tables of content
   background-color: #123962;
   text-align: center;
   margin-top: 2rem;
+  min-width: 250px;
 }
 
 #cta a {
@@ -107,7 +108,8 @@ a i {
   border-radius: 10px;
   padding: .8rem 2rem;
   text-align: center;
-  min-width: 200px;
+  min-width: 250px;
+  margin-top: 1rem;
 }
 
 #primary a {
@@ -122,7 +124,8 @@ a i {
   display: block;
   border-radius: 10px;
   padding: .8rem 2rem;
-  min-width: 200px;
+  min-width: 250px;
+  margin-top: .5rem;
 }
 
 #secondary a {
@@ -210,10 +213,8 @@ button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    padding-top: 2rem;
   }
   .box img {
-    border-radius: 8px 0 0 8px;
     width: 50%;
   }
 }
@@ -314,10 +315,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#podcasts, #events {
-  height: 100vh;
-}
-
 @media screen and (min-width: 768px) {
   header {
     display: block;
@@ -375,15 +372,6 @@ header {
   padding: 6rem 2rem 8rem 2rem;
 }
 
-.landing #secondary {
-  margin-top: .5rem;
-  width: 250px;
-}
-
-.landing #cta {
-  width: 250px;
-}
-
 @media screen and (min-width: 768px) {
   .flex-wrap {
     display: -ms-grid;
@@ -434,7 +422,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   .wrapper-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     max-width: 700px;
     margin: auto;
   }
@@ -443,6 +431,9 @@ footer p {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .services .box {
+    padding-top: 2rem;
   }
   .services > div:nth-child(2) {
     -ms-grid-row: 2;
@@ -480,6 +471,11 @@ aside h2 {
   color: #021E3A;
 }
 
+#betobe form {
+  width: 450px;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   aside {
     padding: 6rem 0;
@@ -512,8 +508,8 @@ aside h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   padding: 1rem;
   color: white;
   -webkit-box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
@@ -541,7 +537,7 @@ aside h2 {
   background-color: #1f538b59;
 }
 
-.intro {
+.about-wrapper {
   padding: 2rem;
 }
 
@@ -555,6 +551,20 @@ aside h2 {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    margin: auto;
+  }
+  .team-members {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem;
+  }
+  .about-wrapper {
+    padding: 4rem 0;
+    max-width: 700px;
+    margin: auto;
   }
 }
 
@@ -710,8 +720,34 @@ nav div {
   padding: 2rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  .podcasts-wrapper {
+    padding-top: 4rem;
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
 #events .box img {
   width: 100%;
+}
+
+#events .box .box-services {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .podcasts-wrapper {
+    padding-top: 4rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  #events .box img {
+    width: 100%;
+  }
+  .event-wrapper {
+    padding: 2rem 0;
+  }
 }
 
 #contact #primary {

@@ -6,13 +6,16 @@
 @media screen and (min-width:768px) {
 
     .wrapper-section {
-        padding: 6rem 0;
+        padding: 4rem 0;
         max-width: 700px;
         margin: auto;
     }
     .services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .services .box {
+        padding-top: 2rem;
     }
     .services > div:nth-child(2){
         grid-row: 2;

@@ -12,6 +12,7 @@
     background-color: #123962;
     text-align: center;
     margin-top: 2rem;
+    min-width: 250px;
 }
 #cta a {
     text-decoration: none;
@@ -28,7 +29,8 @@ a i {
     border-radius: 10px;
     padding: .8rem 2rem;
     text-align: center;
-    min-width: 200px;
+    min-width: 250px;
+    margin-top: 1rem;
 }
 #primary a {
     text-decoration: none;
@@ -42,7 +44,8 @@ a i {
     display: block;
     border-radius: 10px;
     padding: .8rem 2rem;
-    min-width: 200px;
+    min-width: 250px;
+    margin-top: .5rem;
 }
 #secondary a {
     text-decoration: none;
@@ -138,12 +141,10 @@ button:hover {
     .box {
         display: flex;
         flex-flow: column nowrap;
-        padding-top: 2rem;
     }
 
 
     .box img {
-        border-radius: 8px 0 0 8px;
         width: 50%;
     }
 }
