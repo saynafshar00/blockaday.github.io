@@ -10,3 +10,13 @@ footer p {
     color: white;
     margin-top: 3rem;
 }
+
+
+@media screen and (min-width:768px) {
+    footer .socials{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 500px;
+        margin: auto;
+    }
+}

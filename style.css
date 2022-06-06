@@ -417,6 +417,17 @@ footer p {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+  footer .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    margin: auto;
+  }
+}
+
 .service-box {
   padding: 1rem;
 }
