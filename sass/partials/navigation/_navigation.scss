@@ -85,16 +85,28 @@ nav div {
         height: unset;
         display: unset;
     }
+    #menu nav #secondary{
+        min-width: unset;
+        padding: .5rem;
+        margin-top: 0;
+    }
+    #menu nav #secondary a {
+        font-weight: 500;
+        color: #2754BA;
+        font-size: 1rem;
+        padding: 0;
+    }
 
     #menu ul li a {
         color: #2754BA;
-        padding: 0 .5rem ;
+        padding: 0 .5rem;
         text-align: right;
         font-weight: 500;
     }
     #menu ul {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
     }
     #menu-button, #close {
         display: none;

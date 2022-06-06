@@ -8,18 +8,17 @@
     width: 1px;
 }
 
-.mobile-view {
+.large-view {
     display: none;
 }
 
 @media screen and (min-width:768px) {
     
-    .large-view {
+    .mobile-view {
         display: none;
     }
 
-        
-    .mobile-view {
+    .large-view {
         display: block;
     }
 }
