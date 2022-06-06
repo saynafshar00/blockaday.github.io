@@ -50,7 +50,7 @@ Tables of content
 
 @media screen and (min-width: 768px) {
   .text-limit {
-    width: 700px;
+    width: 600px;
   }
   .two {
     display: -ms-grid;
@@ -122,7 +122,7 @@ a i {
   border-radius: 10px;
   padding: .8rem 2rem;
   min-width: 250px;
-  margin-top: .5rem;
+  margin-top: 1rem;
 }
 
 #secondary a {
@@ -147,6 +147,7 @@ a i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: .5rem;
 }
 
 .tertiary span {
@@ -360,6 +361,10 @@ header {
   padding: 6rem 2rem 8rem 2rem;
 }
 
+.landing #secondary {
+  margin-top: .5rem;
+}
+
 @media screen and (min-width: 768px) {
   .column-order div:nth-child(3) {
     -ms-grid-column: 3;
@@ -447,7 +452,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   footer {
-    padding: 6rem 6rem 4rem 6rem;
+    padding: 6rem 2rem 4rem 2rem;
   }
   .bottom-nav {
     display: -webkit-box;
@@ -475,11 +480,11 @@ footer p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
-    gap: .5rem 1rem;
+    gap: 1rem 2rem;
   }
 }
 
-#services {
+#portfolio {
   padding: 4rem 0;
 }
 
@@ -548,7 +553,7 @@ aside h2 {
 }
 
 #about {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .box-wrapper {
@@ -637,7 +642,6 @@ aside h2 {
     gap: 0 2rem;
   }
   .about-wrapper {
-    padding: 4rem 0;
     max-width: 700px;
     margin: auto;
   }
@@ -757,6 +761,10 @@ nav div {
   padding: 1rem 0;
 }
 
+#menu nav #secondary {
+  display: none;
+}
+
 .bottom-menu li {
   list-style: none;
 }
@@ -784,19 +792,21 @@ nav div {
     display: unset;
   }
   #menu nav #secondary {
+    display: block;
     min-width: unset;
     padding: .5rem;
     margin-top: 0;
+    margin: 0 0 0 .8rem;
   }
   #menu nav #secondary a {
     font-weight: 500;
-    color: #2754BA;
+    color: #0099FD;
     font-size: 1rem;
     padding: 0;
   }
   #menu ul li a {
     color: #2754BA;
-    padding: 0 .5rem;
+    padding: 0 0 0 .8rem;
     text-align: right;
     font-weight: 500;
   }

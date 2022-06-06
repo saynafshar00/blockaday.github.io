@@ -60,7 +60,9 @@ nav div {
 #menu ul li{
     padding: 1rem 0;
 }
-
+#menu nav #secondary{
+    display: none;
+}
 
 // bottom nav
 .bottom-menu li {
@@ -86,20 +88,22 @@ nav div {
         display: unset;
     }
     #menu nav #secondary{
+        display: block;
         min-width: unset;
         padding: .5rem;
         margin-top: 0;
+        margin: 0 0 0 .8rem;
     }
     #menu nav #secondary a {
         font-weight: 500;
-        color: #2754BA;
+        color: #0099FD;
         font-size: 1rem;
         padding: 0;
     }
 
     #menu ul li a {
         color: #2754BA;
-        padding: 0 .5rem;
+        padding: 0 0 0 .8rem;
         text-align: right;
         font-weight: 500;
     }

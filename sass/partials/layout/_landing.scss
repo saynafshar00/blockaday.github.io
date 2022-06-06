@@ -8,6 +8,9 @@
 .landing {
     padding: 6rem 2rem 8rem 2rem;
 }
+.landing #secondary{
+    margin-top: .5rem;
+}
 
 @media screen and (min-width:768px) {
     .column-order div:nth-child(3) {
