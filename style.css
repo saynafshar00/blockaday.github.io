@@ -451,10 +451,15 @@ aside h2 {
       -ms-flex-flow: column;
           flex-flow: column;
   padding: 1rem;
-  color: #1F548B;
+  color: white;
   -webkit-box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
           box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
   text-decoration: none;
+  background-color: #1F548B;
+}
+
+.box-menu p {
+  color: white;
 }
 
 .box-menu i {
@@ -465,6 +470,11 @@ aside h2 {
 .box-menu:hover {
   -webkit-box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
           box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.238);
+}
+
+.box-menu-wrapper {
+  padding: 2rem 2rem;
+  background-color: #1f538b59;
 }
 
 .intro {
