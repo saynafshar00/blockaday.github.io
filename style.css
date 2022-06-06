@@ -64,11 +64,10 @@ Tables of content
           flex-flow: column wrap;
 }
 
-.text-limit {
-  width: 600px;
-}
-
 @media screen and (min-width: 768px) {
+  .text-limit {
+    width: 700px;
+  }
   .two {
     display: -ms-grid;
     display: grid;
@@ -102,6 +101,7 @@ Tables of content
   text-align: center;
   margin-top: 2rem;
   min-width: 250px;
+  border: none;
 }
 
 #cta a {
@@ -115,6 +115,7 @@ a i {
 }
 
 #primary {
+  border: none;
   background-color: #123962;
   display: block;
   border-radius: 10px;
@@ -169,25 +170,6 @@ a i {
 }
 
 /* Links */
-main button {
-  border-radius: 50px;
-  padding: .8rem 0;
-  background-color: #123962;
-  color: white;
-  outline: none;
-  border: none;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
-  -webkit-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
-}
-
-button:hover {
-  background-color: #0099FD;
-  color: #123962;
-  font-weight: bold;
-}
-
 .box {
   border: 1px solid rgba(128, 128, 128, 0.134);
   margin-bottom: 2rem;
@@ -433,9 +415,8 @@ header {
 
 /* FOOTER */
 footer {
-  margin-top: 8rem;
   background-color: #123962;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem 4rem 2rem;
 }
 
 footer p {

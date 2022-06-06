@@ -13,6 +13,7 @@
     text-align: center;
     margin-top: 2rem;
     min-width: 250px;
+    border: none;
 }
 #cta a {
     text-decoration: none;
@@ -24,6 +25,7 @@ a i {
 }
 // primary
 #primary {
+    border: none;
     background-color: #123962;
     display: block;
     border-radius: 10px;
@@ -68,21 +70,21 @@ a i {
 
 
 /* Links */
-main button {
-    border-radius: 50px;
-    padding: .8rem 0;
-    background-color: #123962;
-    color: white;
-    outline: none;
-    border: none;
-    transition: background-color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-}
-button:hover {
-    background-color: #0099FD;
-    color: #123962;
-    font-weight: bold;
-}
+// main button {
+//     border-radius: 50px;
+//     padding: .8rem 0;
+//     background-color: #123962;
+//     color: white;
+//     outline: none;
+//     border: none;
+//     transition: background-color .2s ease-in-out;
+//     transition: color .2s ease-in-out;
+// }
+// button:hover {
+//     background-color: #0099FD;
+//     color: #123962;
+//     font-weight: bold;
+// }
 
 // cards
 .box {
