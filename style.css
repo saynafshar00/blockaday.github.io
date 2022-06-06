@@ -628,6 +628,10 @@ nav div {
   width: 100%;
 }
 
+#contact #primary {
+  margin-top: 1rem;
+}
+
 .blog-wrapper {
   padding: 2rem;
 }
