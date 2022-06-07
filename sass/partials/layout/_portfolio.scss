@@ -1,0 +1,39 @@
+// services
+#portfolio {
+    padding: 4rem 0;
+}
+.service-box {
+    padding: 1rem;
+}
+.services {
+    margin: 2rem 0;
+}
+@media screen and (min-width:768px) {
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 1rem;
+    }
+    .services .box {
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .services .box .service-box > p {
+        text-align: left;
+    }
+    // .services > div:nth-child(2){
+    //     grid-row: 2;
+    //     display: flex;
+    //     flex-flow: row nowrap;
+    //     gap: 1rem;
+    //     grid-column: 1 / -1;
+    // }
+
+    .services .box .service-box {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+}

@@ -1,39 +1,36 @@
-// services
-#portfolio {
-    padding: 4rem 0;
+
+.betobe-wrapper {
+    padding: 2rem;
 }
-.service-box {
-    padding: 1rem;
+aside {
+    background-color: #FFE45F;
+
 }
-.services {
-    margin: 2rem 0;
+aside p {
+    color: black;
 }
+aside h2 {
+    color: #021E3A;
+}
+
+#betobe form {
+    max-width: 450px;
+    margin: 2rem auto 5rem auto;
+}
+
+
 @media screen and (min-width:768px) {
 
-    .services {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0 1rem;
+    aside {
+        padding: 4rem 0;
     }
-    .services .box {
-        padding-top: 2rem;
-        text-align: center;
-    }
-    .services .box .service-box > p {
-        text-align: left;
-    }
-    // .services > div:nth-child(2){
-    //     grid-row: 2;
-    //     display: flex;
-    //     flex-flow: row nowrap;
-    //     gap: 1rem;
-    //     grid-column: 1 / -1;
-    // }
-
-    .services .box .service-box {
-        display: flex;
-        flex-flow: column nowrap;
+    .betobe-wrapper {
+        padding: 4rem 2rem;
+        max-width: 800px;
+        margin: auto;
     }
 
-
+    #b2b #primary {
+        margin: 0;
+    }
 }

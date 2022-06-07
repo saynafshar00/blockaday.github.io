@@ -87,19 +87,21 @@ nav div {
         height: unset;
         display: unset;
     }
+ 
     #menu nav #secondary button{
         display: block;
         min-width: unset;
-        padding: .8rem;
+        padding: .6rem;
         margin-top: 0;
         margin: 0 0 0 .8rem;
-    }
-    #menu nav #secondary {
+        font-size: 1rem;
         font-weight: 500;
         color: #0099FD;
-        font-size: 1rem;
     }
-
+    #menu nav #secondary:hover button{
+        background-color: #0099FD;
+        color: white;
+    }
     #menu ul li:not(:last-child) a {
         color: #2754BA;
         padding: 0 0 0 .8rem;

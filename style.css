@@ -121,6 +121,7 @@ a i {
   cursor: pointer;
   color: white;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 #primary:hover button {
@@ -468,9 +469,9 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   max-width: 800px;
   margin: auto;
 }
@@ -519,6 +520,41 @@ footer p {
   }
 }
 
+.betobe-wrapper {
+  padding: 2rem;
+}
+
+aside {
+  background-color: #FFE45F;
+}
+
+aside p {
+  color: black;
+}
+
+aside h2 {
+  color: #021E3A;
+}
+
+#betobe form {
+  max-width: 450px;
+  margin: 2rem auto 5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    padding: 4rem 0;
+  }
+  .betobe-wrapper {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  #b2b #primary {
+    margin: 0;
+  }
+}
+
 #portfolio {
   padding: 4rem 0;
 }
@@ -555,44 +591,6 @@ footer p {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
   }
-}
-
-.betobe-wrapper {
-  padding: 2rem;
-}
-
-aside {
-  background-color: #FFE45F;
-}
-
-aside p {
-  color: black;
-}
-
-aside h2 {
-  color: #021E3A;
-}
-
-#betobe form {
-  max-width: 450px;
-  margin: 2rem auto 5rem auto;
-}
-
-@media screen and (min-width: 768px) {
-  aside {
-    padding: 4rem 0;
-  }
-  .aside-wrapper {
-    max-width: 800px;
-    margin: auto;
-  }
-  #b2b #primary {
-    margin: 0;
-  }
-}
-
-#about {
-  padding: 2rem 0;
 }
 
 .box-wrapper {
@@ -677,6 +675,9 @@ aside h2 {
 }
 
 @media screen and (min-width: 768px) {
+  #about {
+    padding: 2rem 0;
+  }
   .box-wrapper {
     display: -ms-grid;
     display: grid;
@@ -846,14 +847,16 @@ nav div {
   #menu nav #secondary button {
     display: block;
     min-width: unset;
-    padding: .8rem;
+    padding: .6rem;
     margin-top: 0;
     margin: 0 0 0 .8rem;
-  }
-  #menu nav #secondary {
+    font-size: 1rem;
     font-weight: 500;
     color: #0099FD;
-    font-size: 1rem;
+  }
+  #menu nav #secondary:hover button {
+    background-color: #0099FD;
+    color: white;
   }
   #menu ul li:not(:last-child) a {
     color: #2754BA;
@@ -933,22 +936,23 @@ nav div {
 
 #contact {
   margin-top: 1rem;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   #contact {
-    min-height: 60vh;
+    min-height: 35vh;
   }
-  #contact form {
+  #contact {
     padding: 6rem 0;
     width: 450px;
-    margin: auto;
+    margin: 1rem auto;
   }
 }
 
 .blogs-wrapper {
   padding: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 .blog-box-wrapper {
@@ -966,6 +970,9 @@ nav div {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 0 2rem;
+  }
+  .blogs-wrapper {
+    padding: 4rem 2rem;
   }
 }
 
@@ -998,6 +1005,7 @@ nav div {
 #newsletter {
   margin-top: 1rem;
   text-align: center;
+  height: 25vh;
 }
 
 @media screen and (min-width: 768px) {

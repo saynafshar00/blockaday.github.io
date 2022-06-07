@@ -40,6 +40,7 @@ a i {
     cursor: pointer;
     color: white;
     font-weight: 600;
+    margin-top: 1rem;
 }
 #primary:hover button {
     background-color: #021E3A;
@@ -166,11 +167,8 @@ a i {
         flex-flow: column nowrap;
     }
 
-
     .box img {
         width: 50%;
     }
 
-
-    
 }

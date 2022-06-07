@@ -25,7 +25,7 @@ footer p {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-start;
     max-width: 800px;
     margin: auto;
 }
