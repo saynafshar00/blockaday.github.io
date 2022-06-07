@@ -22,15 +22,14 @@ aside h2 {
 @media screen and (min-width:768px) {
 
     aside {
-        padding: 4rem 0;
+        padding: 4rem 3rem;
     }
     .betobe-wrapper {
-        padding: 4rem 2rem;
         max-width: 800px;
         margin: auto;
     }
 
-    #b2b #primary {
+    #b2b #primary button {
         margin: 0;
     }
 }

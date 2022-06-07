@@ -86,12 +86,10 @@ Tables of content
 #cta button {
   background-image: linear-gradient(195deg, #0099FD 1.84%, #2754BA 65.45%);
   border-radius: 10px;
-  padding: .7rem 0;
+  padding: .8rem 2rem;
   background-color: #123962;
   background-color: #2754BA;
-  text-align: center;
-  margin-top: 2rem;
-  min-width: 250px;
+  min-width: 200px;
   border: none;
   cursor: pointer;
   color: white;
@@ -114,8 +112,7 @@ a i {
   background-color: #123962;
   border-radius: 10px;
   padding: .8rem 2rem;
-  text-align: center;
-  min-width: 250px;
+  min-width: 200px;
   -webkit-transition: background-color ease-in-out .2s;
   transition: background-color ease-in-out .2s;
   cursor: pointer;
@@ -133,7 +130,7 @@ a i {
   border: solid 1px #0098fd59;
   border-radius: 10px;
   padding: .8rem 2rem;
-  min-width: 250px;
+  min-width: 200px;
   margin-top: 1rem;
   cursor: pointer;
   color: #0099FD;
@@ -384,11 +381,37 @@ header {
   padding: 6rem 2rem 8rem 2rem;
 }
 
-.landing #secondary {
+.landing #secondary button {
   margin-top: .5rem;
 }
 
 @media screen and (min-width: 768px) {
+  .landing div {
+    display: block;
+  }
+  .landing {
+    padding: 6rem 3rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  .landing-wrapper {
+    background-color: #FAFBFC;
+    background-size: contain;
+    padding: 2rem 0;
+  }
+  .landing div #cta button {
+    margin-top: 1rem;
+  }
+  .landing #secondary {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .landing div {
+    display: -ms-grid;
+    display: grid;
+  }
   .column-order div:nth-child(3) {
     -ms-grid-column: 2;
     grid-column: 2;
@@ -406,27 +429,13 @@ header {
   }
   .column-order div:nth-child(1) {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/ 3;
+    -ms-grid-column-span: 1;
+    grid-column: 1/ 2;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .landing {
-    padding: 6rem 0;
-    max-width: 800px;
-    margin: auto;
-  }
-  .landing-wrapper {
-    background-color: #FAFBFC;
-    background-size: contain;
-    padding: 2rem 0;
-  }
-  .landing #cta {
+  .landing #cta button {
     margin-top: 0;
-  }
-  .landing #secondary button {
-    display: none;
-    margin-top: 2rem;
   }
 }
 
@@ -478,7 +487,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
   footer {
-    padding: 6rem 2rem 4rem 2rem;
+    padding: 6rem 3rem 4rem 3rem;
   }
   .bottom-nav {
     display: -webkit-box;
@@ -543,20 +552,19 @@ aside h2 {
 
 @media screen and (min-width: 768px) {
   aside {
-    padding: 4rem 0;
+    padding: 4rem 3rem;
   }
   .betobe-wrapper {
-    padding: 4rem 2rem;
     max-width: 800px;
     margin: auto;
   }
-  #b2b #primary {
+  #b2b #primary button {
     margin: 0;
   }
 }
 
 #portfolio {
-  padding: 4rem 0;
+  padding: 2rem;
 }
 
 .service-box {
@@ -568,6 +576,9 @@ aside h2 {
 }
 
 @media screen and (min-width: 768px) {
+  #portfolio {
+    padding: 4rem 3rem;
+  }
   .services {
     display: -ms-grid;
     display: grid;
@@ -676,7 +687,7 @@ aside h2 {
 
 @media screen and (min-width: 768px) {
   #about {
-    padding: 2rem 0;
+    padding: 2rem 3rem;
   }
   .box-wrapper {
     display: -ms-grid;
@@ -699,11 +710,7 @@ aside h2 {
     margin: auto;
   }
   .box-menu-wrapper {
-    padding: 4rem 2rem;
-  }
-  #about #secondary {
-    width: 100%;
-    margin: 1rem 0 0 0;
+    padding: 4rem 3rem;
   }
 }
 
@@ -901,6 +908,7 @@ nav div {
 
 @media screen and (min-width: 768px) {
   .podcasts-wrapper {
+    padding: 4rem 2rem;
     max-width: 800px;
     margin: auto;
   }
@@ -920,8 +928,8 @@ nav div {
 }
 
 @media screen and (min-width: 768px) {
-  .podcasts-wrapper {
-    padding-top: 4rem;
+  .events-wrapper {
+    padding: 4rem 2rem;
     max-width: 800px;
     margin: auto;
   }
@@ -946,6 +954,9 @@ nav div {
     padding: 6rem 0;
     width: 450px;
     margin: 1rem auto;
+  }
+  .contact-wrapper {
+    padding: 4rem 2rem;
   }
 }
 
@@ -978,7 +989,6 @@ nav div {
 
 .social-wrapper {
   margin-top: 1rem;
-  text-align: center;
   padding: 2rem;
   max-width: 800px;
   margin: auto;
@@ -994,11 +1004,10 @@ nav div {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .social-wrapper > p {
-    padding: 0 5rem;
-  }
   .social-wrapper {
-    padding: 6rem 0;
+    max-width: 500px;
+    margin: auto;
+    padding: 6rem 2rem;
   }
 }
 
@@ -1016,5 +1025,8 @@ nav div {
     padding: 6rem 0;
     width: 450px;
     margin: auto;
+  }
+  .newsletter-wrapper {
+    padding: 4rem 2rem;
   }
 }

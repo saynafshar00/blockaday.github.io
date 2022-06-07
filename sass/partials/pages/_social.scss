@@ -1,7 +1,6 @@
 
 .social-wrapper  {
     margin-top: 1rem;
-    text-align: center;
     padding: 2rem;
     max-width: 800px;
     margin: auto;
@@ -18,11 +17,10 @@
 
     }
 
-    .social-wrapper > p {
-        padding: 0 5rem;
-    }
   
     .social-wrapper {
-        padding: 6rem 0;
+        max-width: 500px;
+        margin: auto;
+        padding: 6rem 2rem;
     }
 }

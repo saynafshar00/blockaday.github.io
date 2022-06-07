@@ -60,7 +60,7 @@
 
 @media screen and (min-width:768px) {
     #about {
-        padding: 2rem 0;
+        padding: 2rem 3rem;
     }
     .box-wrapper {
         display: grid;
@@ -79,13 +79,10 @@
         margin: auto;
     }
     .box-menu-wrapper {
-        padding: 4rem 2rem;
+        padding: 4rem 3rem;
     }
 
-    #about #secondary {
-        width: 100%;
-        margin: 1rem 0 0 0;
-    }
+
 
   
 }

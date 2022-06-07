@@ -14,7 +14,7 @@
         <header>
             <div class="header-wrapper">
                 <div class="logo-wrapper">
-                    <img class="logo" src="Branding/logo-Blockaday.png" alt="Blockaday Logo">
+                    <a href="index.html"><img class="logo" src="Branding/logo-Blockaday.png" alt="Blockaday Logo"></a>                
                 </div>
                 <nav class="nav-wrapper">
                     <button id="menu-button"><i class="fas fa-bars"><span class="visually-hidden">Menu</span></i></button> 
@@ -25,7 +25,7 @@
                             <ul>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="index.html#portfolio">Portfolio</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a id="secondary" href="subscribe.html"><button >Subscribe</button></a></li>
                             </ul>
@@ -36,17 +36,19 @@
         </header>
 
         <main id="contact" class="wrapper-section">
-            <h2>Interested to collaborate with us?</h2>
-            <p>Please leave your contact details and we'll be in touch soon!</p>
-    
-            <form action="https://formspree.io/f/xknyjelk" method="POST">
-                <label for="name">Name</label>
-                <input type="name" id="name" name="_replyto" placeholder="Name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" placeholder="Email" required>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button id="primary-button" type="submit" value="send">Send Message</button>
-            </form>
+            <div class="contact-wrapper">
+                <h2>Interested to collaborate with us?</h2>
+                <p>Leave us your contact details and we'll be in touch soon!</p>
+        
+                <form action="https://formspree.io/f/xknyjelk" method="POST">
+                    <label for="name">Name</label>
+                    <input type="name" id="name" name="_replyto" placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button id="primary-button" type="submit" value="send">Send Message</button>
+                </form>
+            </div>
 
         </main>
 
