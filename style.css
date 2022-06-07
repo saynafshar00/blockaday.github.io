@@ -78,65 +78,74 @@ Tables of content
   }
   .wrapper-section {
     padding: 4rem 0;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
 }
 
-#cta {
-  background: linear-gradient(230.99deg, #0084DB 0%, #103DA4 48.28%, #123962 96.56%);
-  display: block;
+#cta button {
+  background-image: linear-gradient(195deg, #0099FD 1.84%, #2754BA 65.45%);
   border-radius: 10px;
-  padding: .8rem 0;
+  padding: .7rem 0;
   background-color: #123962;
+  background-color: #2754BA;
   text-align: center;
   margin-top: 2rem;
   min-width: 250px;
   border: none;
-}
-
-#cta a {
-  text-decoration: none;
+  cursor: pointer;
   color: white;
   font-weight: 600;
+  -webkit-transition: background-color ease-in-out .8s;
+  transition: background-color ease-in-out .8s;
+}
+
+#cta:hover button {
+  background-image: none;
+  background-color: #123962;
 }
 
 a i {
   padding-right: .5rem;
 }
 
-#primary {
+#primary button {
   border: none;
   background-color: #123962;
-  display: block;
   border-radius: 10px;
   padding: .8rem 2rem;
   text-align: center;
   min-width: 250px;
-  margin-top: 1rem;
-  color: white;
-}
-
-#primary a {
-  text-decoration: none;
+  -webkit-transition: background-color ease-in-out .2s;
+  transition: background-color ease-in-out .2s;
+  cursor: pointer;
   color: white;
   font-weight: 600;
 }
 
-#secondary {
+#primary:hover button {
+  background-color: #021E3A;
+}
+
+#secondary button {
   background-color: #ffffff;
   border: solid 1px #0098fd59;
-  display: block;
   border-radius: 10px;
   padding: .8rem 2rem;
   min-width: 250px;
   margin-top: 1rem;
-}
-
-#secondary a {
-  text-decoration: none;
+  cursor: pointer;
   color: #0099FD;
   font-weight: 600;
+  -webkit-transition: color ease-in-out .2s;
+  transition: color ease-in-out .2s;
+  -webkit-transition: background-color ease-in-out .2s;
+  transition: background-color ease-in-out .2s;
+}
+
+#secondary:hover button {
+  background-color: #0099FD;
+  color: white;
 }
 
 .tertiary {
@@ -156,6 +165,7 @@ a i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: .5rem;
+  cursor: pointer;
 }
 
 .tertiary span {
@@ -312,6 +322,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   header {
     display: block;
@@ -352,7 +366,7 @@ header {
     padding: 1rem 3rem;
   }
   .header-wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
 }
@@ -375,13 +389,15 @@ header {
 
 @media screen and (min-width: 768px) {
   .column-order div:nth-child(3) {
-    -ms-grid-column: 3;
-    grid-column: 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
     padding-bottom: .5rem;
   }
   .column-order div:nth-child(2) {
@@ -396,7 +412,7 @@ header {
   }
   .landing {
     padding: 6rem 0;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
   .landing-wrapper {
@@ -407,8 +423,9 @@ header {
   .landing #cta {
     margin-top: 0;
   }
-  .landing #secondary {
+  .landing #secondary button {
     display: none;
+    margin-top: 2rem;
   }
 }
 
@@ -454,7 +471,7 @@ footer p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -469,6 +486,7 @@ footer p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+    gap: 0 2rem;
   }
   .bottom-nav ul {
     display: -ms-grid;
@@ -478,7 +496,16 @@ footer p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
-    gap: .5rem 0;
+  }
+  .bottom-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 1rem 0;
   }
   .socials {
     display: -ms-grid;
@@ -556,7 +583,7 @@ aside h2 {
     padding: 4rem 0;
   }
   .aside-wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
   #b2b #primary {
@@ -597,11 +624,23 @@ aside h2 {
   -webkit-box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
           box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.126);
   text-decoration: none;
+  background-color: #7ba3ff;
+  -webkit-transition: background-color ease-in .2s;
+  transition: background-color ease-in .2s;
+}
+
+.box-menu:hover {
   background-color: #4877E0;
 }
 
 .box-menu p {
   color: white;
+  -webkit-transition: font-weight ease-in .2s;
+  transition: font-weight ease-in .2s;
+}
+
+.box-menu:hover p {
+  font-weight: 600;
 }
 
 .box-menu i {
@@ -643,8 +682,9 @@ aside h2 {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
+    gap: 2rem;
   }
   .team-members {
     display: -ms-grid;
@@ -654,7 +694,7 @@ aside h2 {
     gap: 0 2rem;
   }
   .about-wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
   .box-menu-wrapper {
@@ -773,7 +813,7 @@ nav div {
   padding: 1rem 0;
 }
 
-#menu nav #secondary {
+#menu nav #secondary button {
   display: none;
 }
 
@@ -792,7 +832,7 @@ nav div {
 }
 
 .bottom-menu ul li {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -803,20 +843,19 @@ nav div {
     height: unset;
     display: unset;
   }
-  #menu nav #secondary {
+  #menu nav #secondary button {
     display: block;
     min-width: unset;
-    padding: .5rem;
+    padding: .8rem;
     margin-top: 0;
     margin: 0 0 0 .8rem;
   }
-  #menu nav #secondary a {
+  #menu nav #secondary {
     font-weight: 500;
     color: #0099FD;
     font-size: 1rem;
-    padding: 0;
   }
-  #menu ul li a {
+  #menu ul li:not(:last-child) a {
     color: #2754BA;
     padding: 0 0 0 .8rem;
     text-align: right;
@@ -859,7 +898,7 @@ nav div {
 
 @media screen and (min-width: 768px) {
   .podcasts-wrapper {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
 }
@@ -880,7 +919,7 @@ nav div {
 @media screen and (min-width: 768px) {
   .podcasts-wrapper {
     padding-top: 4rem;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
   }
   .event-wrapper {
@@ -934,7 +973,7 @@ nav div {
   margin-top: 1rem;
   text-align: center;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
 }
 

@@ -1,60 +1,71 @@
 
 // CTA
-#cta {
-    // background-image: linear-gradient(225.58deg, #0099FD 1.84%, #2754BA 65.45%);
-    background: linear-gradient(230.99deg, #0084DB 0%, #103DA4 48.28%, #123962 96.56%);
+#cta button{
+    background-image: linear-gradient(195deg, #0099FD 1.84%, #2754BA 65.45%);
+    // background: linear-gradient(230.99deg, #0084DB 0%, #103DA4 48.28%, #123962 96.56%);
     // background: linear-gradient(244.79deg, #2EACFF 13.14%, #4877E0  52.08%, #103DA4 92.8%);
     // background: linear-gradient(233deg, #4877E0 0%, #103DA4 91.44%);
     // background: linear-gradient(245.82deg, #2EACFF 15.89%, #4877E0 50.39%, #103DA4 84.91%);
-    display: block;
     border-radius: 10px;
-    padding: .8rem 0;
+    padding: .7rem 0;
     background-color: #123962;
+    background-color: #2754BA;
     text-align: center;
     margin-top: 2rem;
     min-width: 250px;
     border: none;
-}
-#cta a {
-    text-decoration: none;
+    cursor: pointer;
     color: white;
     font-weight: 600;
+    transition: background-color ease-in-out .8s;
+}
+#cta:hover button {
+    // background-image: linear-gradient(380deg, #0099FD 1.84%, #2754BA 65.45%);
+    // background-image: linear-gradient(250deg, #0099FD 1.84%, #2754BA 65.45%);
+    background-image: none;
+    background-color: #123962;
 }
 a i {
     padding-right: .5rem;
 }
 // primary
-#primary {
+#primary button {
     border: none;
     background-color: #123962;
-    display: block;
     border-radius: 10px;
     padding: .8rem 2rem;
     text-align: center;
     min-width: 250px;
-    margin-top: 1rem;
-    color: white;
-}
-#primary a {
-    text-decoration: none;
+    transition: background-color ease-in-out .2s;
+    cursor: pointer;
     color: white;
     font-weight: 600;
 }
+#primary:hover button {
+    background-color: #021E3A;
+}
+
+
 // secondary
-#secondary {
+#secondary button {
     background-color: #ffffff;
     border: solid 1px #0098fd59;
-    display: block;
     border-radius: 10px;
     padding: .8rem 2rem;
     min-width: 250px;
     margin-top: 1rem;
-}
-#secondary a {
-    text-decoration: none;
+    cursor: pointer;
     color: #0099FD;
     font-weight: 600;
+    transition: color ease-in-out .2s;
+    transition: background-color ease-in-out .2s;
 }
+
+#secondary:hover button{
+    background-color: #0099FD;
+    color: white;
+ }
+
 // tertiary
 .tertiary {
     color: #0099FD;
@@ -64,12 +75,15 @@ a i {
     align-items: center;
     justify-content: center;
     padding: .5rem;
+    cursor: pointer;
 }
 .tertiary span {
     font-size: 98%;
 }
 
-
+// .tertiary:hover {
+//     font-weight: 600;
+// }
 
 /* Links */
 // main button {
@@ -156,4 +170,7 @@ a i {
     .box img {
         width: 50%;
     }
+
+
+    
 }

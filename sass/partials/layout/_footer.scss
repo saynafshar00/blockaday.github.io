@@ -26,7 +26,7 @@ footer p {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: end;
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -38,12 +38,17 @@ footer p {
     .bottom-nav {
         display: flex;
         align-items: end;
+        gap: 0 2rem;
     }
     .bottom-nav ul {
         display: grid;
         grid-template-columns: repeat(1fr);
         align-items: end;
-        gap: .5rem 0;
+    }
+    .bottom-menu {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem 0;
     }
     .socials {
         display: grid;

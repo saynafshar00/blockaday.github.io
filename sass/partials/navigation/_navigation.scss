@@ -60,7 +60,7 @@ nav div {
 #menu ul li{
     padding: 1rem 0;
 }
-#menu nav #secondary{
+#menu nav #secondary button{
     display: none;
 }
 
@@ -77,7 +77,7 @@ nav div {
     padding: 0;
 }
 .bottom-menu ul li {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 @media screen and (min-width:768px) {
     nav div {
@@ -87,21 +87,20 @@ nav div {
         height: unset;
         display: unset;
     }
-    #menu nav #secondary{
+    #menu nav #secondary button{
         display: block;
         min-width: unset;
-        padding: .5rem;
+        padding: .8rem;
         margin-top: 0;
         margin: 0 0 0 .8rem;
     }
-    #menu nav #secondary a {
+    #menu nav #secondary {
         font-weight: 500;
         color: #0099FD;
         font-size: 1rem;
-        padding: 0;
     }
 
-    #menu ul li a {
+    #menu ul li:not(:last-child) a {
         color: #2754BA;
         padding: 0 0 0 .8rem;
         text-align: right;

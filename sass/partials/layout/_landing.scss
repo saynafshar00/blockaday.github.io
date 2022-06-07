@@ -14,9 +14,10 @@
 
 @media screen and (min-width:768px) {
     .column-order div:nth-child(3) {
-        grid-column: 3;
+        grid-column: 2;
         grid-row: 1;
         align-self: end;
+        justify-self: start;
         padding-bottom: .5rem;
     }
     .column-order div:nth-child(2) {
@@ -28,7 +29,7 @@
     }
     .landing {
         padding: 6rem 0;
-        max-width: 700px;
+        max-width: 800px;
         margin: auto;
     }
     .landing-wrapper {
@@ -41,8 +42,9 @@
         margin-top: 0;
     }
 
-    .landing #secondary {
+    .landing #secondary button{
         display: none;
+        margin-top: 2rem;
     }
 
 
