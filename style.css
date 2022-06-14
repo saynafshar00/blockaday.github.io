@@ -408,6 +408,11 @@ header {
 }
 
 @media screen and (min-width: 1000px) {
+  .landing-wrapper {
+    padding: 4rem 0;
+    background-size: 80%;
+    background-position-y: bottom;
+  }
   .landing div {
     display: -ms-grid;
     display: grid;
